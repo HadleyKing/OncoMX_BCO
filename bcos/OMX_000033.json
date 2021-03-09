@@ -1,0 +1,166 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_glycotyper.csv",
+                    "filename": "human_cancer_glycotyper.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_glycotyper.stat.csv",
+                    "filename": "human_cancer_glycotyper.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "606e9c919013043376ce5610a07adf29",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "glycotyper",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "Hepatocellular carcinoma serum glycoprotein N-glycan intensity measures ",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Daniel Lyman",
+                "email": "danlyman@email.gwu.edu"
+            }
+        ],
+        "created": "2020-01-30T13:00:33.058063",
+        "modified": "2020-03-09T10:08:34.638979",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "cancer",
+            "Hepatocellular carcinoma",
+            "glycotyper",
+            "glycan"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The XLS file 112019 GTyperSamples APB.xlsx was converted to csv format."
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Measured intensity values were normalized across all 50 glycans separately for each individual patient and for each captured serum protein."
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": " An average normalized intensity value was separately calculated for each glycan in each cohort for each protein."
+            },
+            {
+                "name": "",
+                "step_number": 4,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The data format (organization) was reorganized for OncoMX integration."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "The glycotyper dataset displays normalized intensity values detected and quantified by Matrix Assisted Laser Desorption Ionization Mass Spectrometry Imaging (MALDI-MSI) for N-glycans of specific serum proteins across Hepatocellular carcinoma and other patient cohorts such as transplant and cirrhosis."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000033"
+}

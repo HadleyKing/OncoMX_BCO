@@ -1,0 +1,203 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_scRNA_expression.csv",
+                    "filename": "human_cancer_scRNA_expression.csv"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_scRNA_expression.stat.csv",
+                    "filename": "human_cancer_scRNA_expression.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "9fa1ee49eb39f370e4e1041d65d808f5",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "expression",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "Cancer cell-type expression specificity table",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-05-21T12:47:46.137784",
+        "modified": "2019-12-17T13:16:30.476408",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "scores",
+            "disease",
+            "cancer",
+            "expression specificity",
+            "cell types"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "R commands were used with the recount Bioconductor package to retrieve gene-level count matrices and sample information for all runs in target studies"
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Count matrices were manually filtered for all replicate runs of target cancer cell types"
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Count matrices were normalized with SCnorm using default parameters"
+            },
+            {
+                "name": "",
+                "step_number": 4,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Replicate runs in normalized count matrices were pooled by calculating mean values per cancer cell type"
+            },
+            {
+                "name": "",
+                "step_number": 5,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Count matrices were merged into forpemdatafiltered.csv and this input file with transcriptlist.csv was used with the script pemscorescriptfiltered.R to calculate PEM scores"
+            },
+            {
+                "name": "",
+                "step_number": 6,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The input file, pemscoreswithtranscriptsfiltered.csv, was used to determine expression type annotations with the script expressiontyping.py"
+            },
+            {
+                "name": "",
+                "step_number": 7,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "organizer2.py was used with pemscoreswithtranscriptsfiltered.csv and type_sheet_filtered.csv as input files to merge PEM scores, expression type annotations, and cell type information into human_cancer_scRNA_expression.csv"
+            },
+            {
+                "name": "",
+                "step_number": 8,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "VLOOKUP was used with human_cancer_genes.csv and ensembl_to_gene_symbol.txt to map gene symbols and uniprot accessions to Ensembl gene ids in human_cancer_scRNA_expression.csv"
+            },
+            {
+                "name": "",
+                "step_number": 9,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Identifier mapping to ensembl gene ids in human_cancer_scRNA_expression.csv was manually quality checked by searching for five ensembl gene ids with no matching identifiers in  uniprot.org. Additionally, ten uniprot accessions  were checked in uniprot.org for corresponding mapped gene symbols"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "Master results table of cancer cell-type expression specificity data. The csv file human_cancer_scRNA_expression contains expression specificity scores, expression specificity annotations, and associated disease information for cancer cell types."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000015"
+}

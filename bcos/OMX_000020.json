@@ -1,0 +1,155 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "tsv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_mutation_literature.csv",
+                    "filename": "human_cancer_mutation_literature.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_mutation_literature.stat.csv",
+                    "filename": "human_cancer_mutation_literature.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "c947e4c55acda947b108cbc8b300a2bd",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "literature mining",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "name": "Mutation in all cancer from literature (DiMeX)",
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "created": "2019-08-22T11:17:01.979212",
+        "modified": "2020-04-22T11:13:17.907653",
+        "version": "1.0.25",
+        "contributors": [
+            {
+                "orcid": "http://orcid.org/0000-0002-5323-2927",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "University of Delaware",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "K. Vijay Shanker",
+                "email": "vijay@udel.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "University of Delaware",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Peng Su",
+                "email": "psu@udel.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ]
+    },
+    "description_domain": {
+        "keywords": [
+            "mutation",
+            "cancer",
+            "literature mining",
+            "text mininig"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "",
+                        "sha1_chksum": "",
+                        "uri": "",
+                        "filename": ""
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Data were generated and provided by UD and sorted by GW HIVE-Lab."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "List of human [taxid:9606] genes with literature evidence of mutation in all cancers"
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000020"
+}

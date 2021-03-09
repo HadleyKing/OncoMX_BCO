@@ -1,0 +1,131 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/mouse_to_human_OMA_mapping.csv",
+                    "filename": "mouse_to_human_OMA_mapping.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/mouse_to_human_OMA_mapping.stat.csv",
+                    "filename": "mouse_to_human_OMA_mapping.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "daa72351613e95b798841f48aacd144a",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Mus musculus",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer/normal",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "expression",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "",
+        "name": "Mouse to human (OMA) ortholog ID mapping",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2020-01-28T14:43:50.052305",
+        "modified": "2020-01-31T19:30:30.213132",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "mouse",
+            "human",
+            "ortholog",
+            "gene symbol",
+            "mapping"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "A list of Ensembl gene identifiers was retrieved from the Orthologous MAtrix browser."
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "R commands were used to filter the list for one to one orthologs, map HGNC/MGI symbols to Ensembl gene identifiers with R packages org.Mm.eg.db and org.Hs.eg.db, and organize the final mapping file."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "List of one to one orthologous Ensembl gene identifiers and HGNC/MGI gene symbols for humans and mice."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000031"
+}

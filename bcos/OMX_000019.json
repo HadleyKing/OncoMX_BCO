@@ -1,0 +1,155 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_biomarkers_EDRN.csv",
+                    "filename": "human_cancer_biomarkers_EDRN.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_biomarkers_EDRN.stat.csv",
+                    "filename": "human_cancer_biomarkers_EDRN.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "f0c8c4cddd9ac7565849e213ae1f5f2a",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "biomarker",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "EDRN public cancer biomarkers",
+        "contributors": [
+            {
+                "orcid": "http://orcid.org/0000-0002-5323-2927",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "NASA JPL",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Daniel Crichton",
+                "email": "daniel.j.crichton@jpl.nasa.gov"
+            },
+            {
+                "orcid": "",
+                "affiliation": "NASA JPL",
+                "contribution": [
+                    "providedBy"
+                ],
+                "name": "David Liu",
+                "email": "david.Liu@jpl.nasa.gov"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-08-12T19:59:58.181404",
+        "modified": "2019-12-17T13:14:03.411274",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "biomarker",
+            "cancer"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Initial data was retrieved from EDRN through RDF"
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Resulting dataset was altered in the following way: unifying headers, removing special text characters, removed access owners"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "This dataset contains public cancer biomarkers retrieved from the Early Detection Research Network (EDRN)."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000019"
+}

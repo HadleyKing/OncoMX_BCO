@@ -1,0 +1,123 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_scRNA_markers.csv",
+                    "filename": "human_cancer_scRNA_markers.csv"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_scRNA_markers.stat.csv",
+                    "filename": "human_cancer_scRNA_markers.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "f9520107e604a87645b8c289d720bf05",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "expression",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "Differentially expressed marker genes in cancer cells",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2020-03-02T14:02:58.674645",
+        "modified": "2020-03-02T14:03:42.556061",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "marker genes",
+            "disease",
+            "cancer",
+            "differential expression",
+            "cell types",
+            "scRNA-seq"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Results of a Wilcoxon rank-sum test measuring differential gene expression for each cell-type against all other cell-types in the cancer type were aggregated into a single table."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "This table may be used as a list of candidate marker genes in cancer cells. This table features the top ten differentially expressed genes in the cells of a cancer type, determined with a Wilcoxon rank-sum test."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000036"
+}

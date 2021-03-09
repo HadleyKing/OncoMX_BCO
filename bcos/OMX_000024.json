@@ -1,0 +1,131 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_miRNA_expression.csv",
+                    "filename": "human_cancer_miRNA_expression.csv"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_miRNA_expression.stat.csv",
+                    "filename": "human_cancer_miRNA_expression.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "df6847c7f23b5c0a728072c0e0936648",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "expression",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "",
+        "name": "Cancer differentially expressed miRNAs",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-12-20T16:29:40.453635",
+        "modified": "2019-12-20T16:36:28.750844",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "cancer",
+            "differential expression",
+            "RNA-seq",
+            "canonical",
+            "miRNA"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The file was retrieved directly from https://hive.biochemistry.gwu.edu/beta/bioxpress/content/BioXpress_interface_miRNA_final_v2.0.csv. A detailed description of the processing steps used by BioXpress to make this file can be found hive.biochemistry.gwu.edu/bioxpress/readme."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "List of human [taxid:9606] differentially expressed miRNAs with data in cancer samples from TCGA and ICGC - This file contains human [taxid:9606] differentially expressed miRNA in cancer samples. miRNAs are mapped to RefSeq transcripts, and integrated through unification of Disease Ontology (DO) terms an Uberon Anatomical Entity Terms."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000024"
+}

@@ -1,0 +1,147 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_neoepitopes.csv",
+                    "filename": "human_cancer_neoepitopes.csv"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_neoepitopes.stat.csv",
+                    "filename": "human_cancer_neoepitopes.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "40766bd10d7fa4717a3d428012adcd6e",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "neoepitope",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "Human Cancer Neoepitopes",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "La Jolla Institute for Allergy & Immunology",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Randi Vita",
+                "email": "rvita@lji.org"
+            }
+        ],
+        "created": "2020-02-21T11:16:28.161204",
+        "modified": "2020-03-03T16:52:29.981445",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "cancer",
+            "neoepitope",
+            "antigen"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Obtained a subset of neoepitope dataset from http://www.iedb.org/"
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Data was mapped to UniProtKB and HGNC gene symbols along with disease ontology ids. "
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The data format (organization) was reorganized for OncoMX integration."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "The neoepitope dataset displays data on neoepitope peptides that arise from tumor-specific mutations. It catalogs experimental data on epitopes studied in humans in the context of various cancers."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000034"
+}

@@ -1,0 +1,175 @@
+{
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "",
+                    "filename": ""
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/biomarker_masterlist.csv",
+                    "filename": "biomarker_masterlist.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/biomarker_masterlist.stat.csv",
+                    "filename": "biomarker_masterlist.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "01b4abdee72206e23bf417d0204750b2",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "map file",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "Comprehensive map file for cancer gene symbols, uniProt accessions, refseq accessions, taxid",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Robel Kahsay",
+                "email": "rykaysay@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-10-31T13:10:26.403640",
+        "modified": "2019-12-19T14:02:31.759127",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "cancer",
+            "canonical",
+            "gene_symbol",
+            "accessions"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "A detailed description of the processing steps used by BioMuta to make the full data dump can be found hive.biochemistry.gwu.edu/biomuta/readme or by downloading the corresponding readme from hive.biochemistry.gwu.edu/biomuta/prd/content/BioMuta_readme_pipeline_v4.0.txt."
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The file was retrieved directly from /hive/net3/Knowledgebases/BioXpress/bioxpress-4.0-master.csv. A detailed description of the processing steps used by BioXpress to make this file can be found hive.biochemistry.gwu.edu/bioxpress/readme."
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The unique list of UniProtKB/Swiss-Prot accessions is retrieved with corresponding HGNC gene symbol and made available as a download from hive.biochemistry.gwu.edu."
+            },
+            {
+                "name": "",
+                "step_number": 4,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The file was curated to form a comprehensive list of genes with cancer data in BioMuta and/or BioXpress that are mapped to canonical UniProtKB/Swiss-Prot accessions and RefSeq accessions."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "List of human [taxid:9606] genes with cancer data in BioMuta and/or BioXpress - This file contains human [taxid:9606] genes with associated cancer data in BioMuta and/or BioXpress cancer mutation and expression databases. Genes are mapped to canonical UniProtKB/Swiss-Prot accessions and RefSeq accession. "
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000021"
+}

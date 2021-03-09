@@ -1,0 +1,146 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "txt",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_miRNA_expression_literature.csv",
+                    "filename": "human_cancer_miRNA_expression_literature.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_miRNA_expression_literature.stat.csv",
+                    "filename": "human_cancer_miRNA_expression_literature.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "493e223c8159a5291cb9e67b1234e6d5",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "retired",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "literature mining",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "miRNA expression in cancer from literature (DEXTER)",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "University of Delaware",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "K. Vijay Shanker",
+                "email": "vijay@udel.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "University of Delaware",
+                "contribution": [],
+                "name": "Samir Gupta",
+                "email": "sgupta@udel.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Hayley Dingerdissen",
+                "email": "hmhamilt@gwmail.gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-04-27T04:42:54.814040",
+        "modified": "2019-12-12T16:26:41.290401",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "expression",
+            "cancer",
+            "literature mining",
+            "text mining",
+            "miRNA"
+        ],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "List of human [taxid:9606] miRNAs with literature evidence of expression in cancer"
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000010"
+}

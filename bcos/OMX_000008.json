@@ -1,0 +1,194 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_scRNA_expression.csv",
+                    "filename": "human_cancer_scRNA_expression.csv"
+                }
+            },
+            {
+                "mediatype": "csv",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_scRNA_expression.stat.csv",
+                    "filename": "human_cancer_scRNA_expression.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "eec368ef03096deaad131a1112a73bf0",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "expression",
+                "category_name": "study_type"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "retired",
+                "category_name": "dataset_status"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "name": "Cancer gene expression across cell types (scRNA-seq pilot)",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Hayley M. Dingerdissen",
+                "email": "hmhamilt@gwmail.gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-04-25T23:02:07.500564",
+        "modified": "2019-12-17T13:17:57.804437",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "cell groups",
+            "counts",
+            "expression",
+            "scRNA-seq",
+            "PEM"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Instructions in Instructions_for_scRNA_Data.txt were followed in R to download outputfilename1.csv and outputfilename2.csv"
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "SRA run accessions corresponding with cell groups listed in samples_for_retrieval.csv were identified and isolated in counts_input.csv[intermediate]"
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Cell groups and SRA run accessions in counts_input.csv were identified and listed in map_input.csv[intermediate]"
+            },
+            {
+                "name": "",
+                "step_number": 4,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "scRNA_Pool&Norm.py was run to generate transformed.csv[intermediate]"
+            },
+            {
+                "name": "",
+                "step_number": 5,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Ensemble gene IDs were mapped to SwissProt reviewed UniProtKB accessions"
+            },
+            {
+                "name": "",
+                "step_number": 6,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "PEM scores were calculated from count values in transformed.csv and expression specificity was determined"
+            },
+            {
+                "name": "",
+                "step_number": 7,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Expression level was determined from PEM score"
+            },
+            {
+                "name": "",
+                "step_number": 8,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "All calculated values are reported in the final output file."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "List of human [taxid:9606] genes with expression in cells analyzed from scRNA-seq data - This file contains log2 transformed and pooled gene-level counts from cancer scRNA-Seq data for cell groups whose IDs have been mapped to Cellosaurus. Additionally, the file features the Disease Ontology (DOID) and cancer type associated with each cell group, the number of samples pooled, the PEM score calculated, expression specificity reported from the PEM score, and expression level determined from multiple quantitative expression criteria."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000008"
+}

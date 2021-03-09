@@ -1,0 +1,165 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_driver_muts.csv ",
+                    "filename": "human_cancer_driver_muts.csv "
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_driver_muts.stat.csv",
+                    "filename": "human_cancer_driver_muts.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "07b04242efcba083d9dcca99b6ca430c",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "cancer",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "mutation",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "license": "Attribution 4.0 International",
+        "name": "Human cancer driver mutations table",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Evan Holmes ",
+                "email": "evanh@gwmail.gwu.edu"
+            }
+        ],
+        "created": "2019-05-21T15:52:03.769647",
+        "modified": "2019-12-17T13:12:31.024757",
+        "version": "1.0.25"
+    },
+    "description_domain": {
+        "keywords": [
+            "mutations",
+            "cancer",
+            "driver"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "mmc1.xlsx was downloaded from https://www.cell.com/cell/fulltext/S0092-8674(18)30237-X#sec4.1"
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Table S4 in mmc1.xlsx was copied to an independent data file and saved as human_cancer_driver_muts.csv"
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "mut_modifier.py script was used to generate three columns describing cancer driver mutations from column \u201cMutation\u201d in human_cancer_driver_muts.csv"
+            },
+            {
+                "name": "",
+                "step_number": 4,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Uniprot accessions were mapped to gene symbols in human_cancer_driver_muts.csv using VLOOKUP with human_cancer_genes.csv"
+            },
+            {
+                "name": "",
+                "step_number": 5,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "All uniprot accession and gene symbol mapping to ensembl transcript ids was manually checked in human_cancer_genes.csv"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "Comprehensive cancer driver mutations table. The file human_cancer_driver_muts.csv contains a list of gene symbols and ensembl transcript ids mapped to cancer driver mutations predicted by three structural analysis level computational tools. The csv file human_cancer_driver_muts contains ensembl transcript ids, gene symbols, and computationally determined cancer driver mutations.The csv file human_cancer_driver_muts contains ensembl transcript ids, gene symbols, and computationally determined cancer driver mutations."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000016"
+}

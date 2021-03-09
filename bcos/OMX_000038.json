@@ -1,0 +1,168 @@
+{
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_normal_metadata.csv",
+                    "filename": "human_normal_metadata.csv"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_normal_metadata.stat.csv",
+                    "filename": "human_normal_metadata.stat.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "1.3.0",
+    "checksum": "aa270e7e36b1d9a04253b1b4102e55fc",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        },
+        "dataset_categories": [
+            {
+                "category_value": "Homo sapiens",
+                "category_name": "species"
+            },
+            {
+                "category_value": "normal",
+                "category_name": "disease_status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            },
+            {
+                "category_value": "csv",
+                "category_name": "file_format"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "dataset_status"
+            },
+            {
+                "category_value": "clinical data",
+                "category_name": "study_type"
+            }
+        ]
+    },
+    "provenance_domain": {
+        "name": "Metadata for differentially gene expression analysis from normal samples",
+        "license": "Data - Attribution 4.0 International CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/]",
+        "created": "2020-04-21T19:51:53.048965",
+        "modified": "2020-04-22T12:37:47.821528",
+        "version": "1.0.25",
+        "contributors": [
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Nikhita Gogate",
+                "email": "nikigogate@gwu.edu"
+            },
+            {
+                "orcid": "",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Edmund Cauley",
+                "email": "escauley@email.gwu.edu"
+            }
+        ]
+    },
+    "description_domain": {
+        "keywords": [
+            "case ids",
+            "age",
+            "gender",
+            "ethinicity",
+            "race",
+            "normal samples"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "",
+                "step_number": 1,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The file was downloaded from the NIH GDC portal [https://portal.gdc.cancer.gov/repository]."
+            },
+            {
+                "name": "",
+                "step_number": 2,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The cases selected were based on the criteria - files.analysis.workflow_type in [HTSeq - Counts]  and files.data_type in [Gene Expression Quantification] and cases.samples.sample_type in [Solid Tissue Normal] and cases.project.program.name in [TCGA]."
+            },
+            {
+                "name": "",
+                "step_number": 3,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "With the above mentioned filter criteria, data of a total of 2277 cases with solid normal tissue was downloaded. "
+            },
+            {
+                "name": "",
+                "step_number": 4,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The data format (organization) was reorganized for OncoMX integration."
+            },
+            {
+                "name": "",
+                "step_number": 5,
+                "version": "",
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Resulting information was output in human_normal_metadata.csv"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "Clinical data from normal samples from TCGA datasets that were corresponding to the data used for differential gene expression analysis (Meta data for BioXpress V4.0)."
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000038"
+}
