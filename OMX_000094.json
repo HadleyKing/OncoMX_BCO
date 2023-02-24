@@ -1,0 +1,113 @@
+{
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2022-04-07T19:19:38.787037",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/unreviewed/human_cancer_biomarker_panel_onco_reveal_dx_lung_and_colon_cancer.csv",
+                    "filename": "onco_reveal_dx_lung_and_colon_cancer_panel.csv"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2022-04-07T19:19:38.787037",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_biomarker_panel_onco_reveal_dx_lung_and_colon_cancer.csv",
+                    "filename": "human_cancer_biomarker_panel_onco_reveal_dx_lung_and_colon_cancer.csv"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "https://data.oncomx.org/allbiomarkers",
+                "uri": {
+                    "access_time": "2022-04-07T19:19:38.787037",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_biomarker_panel_onco_reveal_dx_lung_and_colon_cancer.csv",
+                    "filename": "human_cancer_biomarker_panel_onco_reveal_dx_lung_and_colon_cancer.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "https://w3id.org/ieee/ieee-2791-schema/",
+    "checksum": "cf00f87947b22df8da0c3dd694e521c4",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        }
+    },
+    "provenance_domain": {
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "ONCO/Reveal Dx lung and colon cancer panel",
+        "contributors": [
+            {
+                "orcid": "0000-0002-8539-6467 ",
+                "affiliation": "GW HIVE-Lab ",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Hawa Coulibaly ",
+                "email": "hcouliba@gwu.edu"
+            },
+            {
+                "orcid": "0000-0002-9920-565X ",
+                "affiliation": "GW HIVE-Lab ",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Amanda Bell ",
+                "email": "amandab2140@gwu.edu"
+            },
+            {
+                "orcid": "0000-0002-8968-6621 ",
+                "affiliation": "GW HIVE-Lab ",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Edmund Cauley ",
+                "email": "escauley@gwu.edu"
+            },
+            {
+                "orcid": "0000-0001-9333-1455 ",
+                "affiliation": "GW HIVE-Lab ",
+                "contribution": [],
+                "name": "Daniel Lyman ",
+                "email": "danlyman@gwu.edu"
+            }
+        ],
+        "created": "2022-04-07T19:19:15.181038",
+        "modified": "2022-04-27T16:02:17.382738",
+        "version": "1.0.36"
+    },
+    "description_domain": {
+        "keywords": [],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "A0398 is a panel of identified gene mutants predictive biomarkers in breast cancer patients. The genes are KRAS (UPKB:P01116), EGFR (UPKB:P00533). This panel is curated from the FDA Approved biomarkers. "
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000094"
+}

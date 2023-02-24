@@ -1,0 +1,126 @@
+{
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2022-04-22T17:58:41.980739",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/unreviewed/human_cancer_biomarker_panel_prosigna_breast_cancer.csv",
+                    "filename": "human_cancer_biomarker_panel_prosigna_breast_cancer.csv"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2022-04-22T17:58:41.980739",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_biomarker_panel_prosigna_breast_cancer.csv",
+                    "filename": "human_cancer_biomarker_panel_prosigna_breast_cancer.csv"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "https://data.oncomx.org/allbiomarkers",
+                "uri": {
+                    "access_time": "2022-04-22T17:58:41.980739",
+                    "sha1_chksum": "",
+                    "uri": "http://data.oncomx.org/ln2wwwdata/reviewed/human_cancer_biomarker_panel_prosigna_breast_cancer.csv",
+                    "filename": "human_cancer_biomarker_panel_prosigna_breast_cancer.csv"
+                }
+            }
+        ]
+    },
+    "bco_spec_version": "https://w3id.org/ieee/ieee-2791-schema/",
+    "checksum": "50f07ea54d30404f97b17133fe83f8a9",
+    "extension_domain": {
+        "fhir_extension": [],
+        "scm_extension": {
+            "scm_repository": "",
+            "scm_path": "",
+            "scm_type": "git",
+            "scm_commit": ""
+        }
+    },
+    "provenance_domain": {
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "Prosigna breast cancer panel",
+        "contributors": [
+            {
+                "orcid": "0000-0002-8539-6467",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Hawa Coulibaly",
+                "email": "hcouliba@gwu.edu"
+            },
+            {
+                "orcid": "0000-0002-9920-565X",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Amanda Bell",
+                "email": "amandab2140@gwu.edu"
+            },
+            {
+                "orcid": "0000-0002-8968-6621",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Edmund Cauley",
+                "email": "escauley@gwu.edu"
+            },
+            {
+                "orcid": "0000-0001-9333-1455",
+                "affiliation": "GW HIVE-Lab",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Daniel Lyman",
+                "email": "danlyman@gwu.edu"
+            }
+        ],
+        "created": "2022-04-22T17:58:41.980739",
+        "modified": "2022-04-26T13:03:03.008887",
+        "version": "1.0.36"
+    },
+    "description_domain": {
+        "keywords": [
+            "breast cancer (DOID:1612)"
+        ],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": [
+            {
+                "uri": {
+                    "access_time": "2022-04-22T17:58:41.980739",
+                    "sha1_chksum": "",
+                    "uri": "https://github.com/oncomx-backend-integration/blob/master/pipeline/integrator/make-dataset.py",
+                    "filename": "make-dataset.py"
+                }
+            }
+        ]
+    },
+    "error_domain": {
+        "empirical_error": {},
+        "algorithmic_error": {}
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "value": "",
+            "param": ""
+        }
+    ],
+    "usability_domain": [
+        "A0402 is a gene expression signature profile (measured by calculating the amount of each RNA entered into a proprietary algorithm to produce a Prosigna score (0-100) and risk category (low 0-40/intermediate 41-60/high 41-40 for node-negative classification and 61-100 for node positive classification) for breast cancer patients. The genes are ACTR3B (UPKB:Q9P1U1), ANLN (UPKB:Q9NQW6), BCL2 (UPKB:P10415), NAT1 (UPKB:P18440), BIRC5 (UPKB:O15392), BAG1 (UPKB:Q99933), BLVRA (UPKB:P53004), CDH3 (UPKB:P22223), CDC6 (UPKB:Q99741), CDC20 (UPKB:Q12834), CENPF (UPKB:P49454), CEP55 (UPKB:Q53EZ4), CXXC5 (UPKB:Q7LFL8), PHGDH (UPKB:O43175), MDM2 (UPKB:Q00987), EGFR (UPKB:P00533), ESR1 (UPKB:P03372), EXO1  (UPKB:Q9UQ84), FGFR4 (UPKB:P22455), FOXC1 (UPKB:Q12948), CCNE1 (UPKB:P24864), CCNB1 (UPKB:P14635), GRB7 (UPKB:Q14451), FOXA1 (UPKB:P55317), KRT14 (UPKB:P02533), KRT17 (UPKB:Q04695), KRT5 (UPKB:P13647), KIF2C (UPKB:Q99661), NDC80 (UPKB:O14777), NUF2 (UPKB:Q9BZD4), MELK (UPKB:Q14680), MIA2 (UPKB:Q96PC5), MLPH (UPKB:Q9BV36), MAPT (UPKB:P10636), MIKF (UPKB:Q9BYG3), MYBL2 (UPKB:P10244), MYC (UPKB:P01106), ORC6 (UPKB:Q9Y5N6), PGRL1A (UPKB:Q8H112), GPR160 (UPKB:Q9UJ42), MKI67 (UPKB:P46013), ERBB2 (UPKB:P04626), RRM2 (UPKB:P31350), SFRP1 (UPKB:Q8N474), PTTG1 (UPKB:O95997), MMPL1 (UPKB:P24347), TYMS (UPKB:P04818), TMFM45B (UPKB:Q96B21), UBE3C (UPKB:O00762), UBE2T (UPKB:Q9NPD8), SLC39A6 (UPKB:Q13433).  of identified protein prognostic biomarkers (differential expression) and a gene prognostic biomarker (mutation) in colorectal cancer. The proteins are MLH1 (UPKB:P40692), MSH2 (UPKB:P43246), MSH6 (UPKB:P52701), PMS2 (UPKB:P54278) and the gene is BRAF (UPKB:P15056). This panel is curated from the FDA Approved biomarkers. "
+    ],
+    "bco_id": "http://data.oncomx.org/OMX_000098"
+}
